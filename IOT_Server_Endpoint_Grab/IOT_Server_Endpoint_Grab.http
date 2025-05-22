@@ -1,0 +1,6 @@
+@IOT_Server_Endpoint_Grab_HostAddress = http://localhost:5044
+
+GET {{IOT_Server_Endpoint_Grab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

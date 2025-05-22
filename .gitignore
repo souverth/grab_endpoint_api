@@ -1,0 +1,71 @@
+## Build results
+bin/
+obj/
+[Ll]og/
+logs/
+*.log
+
+## User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vscode/
+.idea/
+*.code-workspace
+
+## Visual Studio files
+.vs/
+Generated_Code/
+
+## Rider
+.idea/
+*.sln.iml
+
+## ASP.NET
+wwwroot/dist/
+wwwroot/lib/
+node_modules/
+bundleconfig.json
+*.db
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## Entity Framework
+Migrations/*Designer.cs
+Migrations/*Snapshot.cs
+Migrations/obj/
+
+## dotCover
+*.dotCover
+
+## test results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+
+## Others
+*.DS_Store
+*.pdb
+*.cache
+*.sqlite
+*.db
+*.bak
+*.tmp
+*.orig
+
+## Secrets
+secrets.json
+appsettings.*.local.json
+appsettings.Development.json
+*.key
+*.pem
+*.crt
