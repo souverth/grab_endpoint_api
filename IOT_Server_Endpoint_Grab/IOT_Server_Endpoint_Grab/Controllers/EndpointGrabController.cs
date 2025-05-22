@@ -21,11 +21,11 @@ namespace IOT_Server_Endpoint_Grab.Controllers
             return Ok();
         }
 
-        [HttpPost("/get_token_client")]
+        [HttpPost("/oauth/token")]
         public ActionResult<OauthResponse> GetToken([FromBody] OAuthRequest request)
         {
             Console.WriteLine($"_____grab_request_auth: " + DateTime.Now.ToString("yyyy - MM - dd HH: mm:ss"));
-            Helper.LogRequest("get_token_client", request);
+            Helper.LogRequest("oauth_token", request);
             OauthResponse OAuth2Client = new OauthResponse
             {
                 expires_in = 60000,
@@ -61,18 +61,18 @@ namespace IOT_Server_Endpoint_Grab.Controllers
             return Ok();
         }
 
-        [HttpPost("push_grab_menu")]
+        [HttpPost("pushGrabMenu")]
         public ActionResult<string> PoshPushOrder([FromBody] object request)
         {
-            Console.WriteLine($"_____grab_submit: " + DateTime.Now.ToString("yyyy - MM - dd HH: mm:ss"));
+            Console.WriteLine($"pushGrabMenu: " + DateTime.Now.ToString("yyyy - MM - dd HH: mm:ss"));
             Helper.LogRequest("push_grab_menu", request);
             return Ok();
         }
 
-        [HttpPost("push_integration_status")]
+        [HttpPost("pushIntegrationStatus")]
         public ActionResult<string> PoshIntergrationStatus([FromBody] object request)
         {
-            Console.WriteLine($"_____grab_submit: " + DateTime.Now.ToString("yyyy - MM - dd HH: mm:ss"));
+            Console.WriteLine($"pushIntegrationStatus: " + DateTime.Now.ToString("yyyy - MM - dd HH: mm:ss"));
             Helper.LogRequest("push_integration_status", request);
             return Ok();
         }
